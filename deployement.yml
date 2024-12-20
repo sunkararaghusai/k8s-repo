@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: cont-1
-        image: nginx
+        image: shaikmustafa/dm
         ports:
         - containerPort: 80
 
@@ -27,7 +27,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app: swiggy
+    app: my-app
   ports:
     - port: 8080
       targetPort: 80
